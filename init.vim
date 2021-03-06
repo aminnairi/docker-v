@@ -43,7 +43,7 @@ set wildignore+=node_modules,.git
 
 " NERDTree
 autocmd VimEnter * NERDTree
-nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 
 " ALE
 let g:ale_fixers = {"javascript": ["eslint"]}
