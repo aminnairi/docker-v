@@ -14,7 +14,7 @@ set smartcase
 set complete-=i
 set lazyredraw
 set display+=lastline
-set encoding=utf-8
+set encoding=utf8
 set linebreak
 set scrolloff=1
 set sidescrolloff=5
@@ -40,6 +40,8 @@ set hidden
 set history=1000
 set noswapfile
 set wildignore+=node_modules,.git
+set magic
+autocmd FocusGained,BufEnter * checktime
 
 " NERDTree
 autocmd VimEnter * NERDTree
