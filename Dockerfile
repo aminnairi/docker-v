@@ -23,6 +23,8 @@ RUN git clone https://github.com/dag/vim-fish /home/archlinux/.config/nvim/pack/
 RUN git clone https://github.com/dense-analysis/ale /home/archlinux/.config/nvim/pack/github/start/ale.vim
 RUN git clone https://github.com/plasticboy/vim-markdown /home/archlinux/.config/nvim/pack/github/start/markdown.vim
 RUN git clone https://github.com/ElmCast/elm-vim /home/archlinux/.config/nvim/pack/github/start/elm.vim
+RUN git clone https://github.com/neovimhaskell/haskell-vim /home/archlinux/.config/nvim/pack/github/start/haskell.vim
+RUN git clone https://github.com/ekalinin/Dockerfile.vim /home/archlinux/.config/nvim/pack/github/start/dockerfile.vim
 
 COPY ./init.vim /home/archlinux/.config/nvim/init.vim
 
