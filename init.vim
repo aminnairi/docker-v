@@ -43,6 +43,9 @@ set wildignore+=node_modules,.git
 set magic
 autocmd FocusGained,BufEnter * checktime
 
+" https://github.com/pangloss/vim-javascript
+let g:javascript_plugin_jsdoc = 1
+
 " NERDTree
 autocmd VimEnter * NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
@@ -50,3 +53,6 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 " ALE
 let g:ale_fixers = {"javascript": ["eslint"]}
 nnoremap <leader>af :ALEFix<cr>
+
+" https://github.com/rakr/vim-one
+let g:one_allow_italics = 1
