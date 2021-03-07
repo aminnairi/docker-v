@@ -42,6 +42,7 @@ set noswapfile
 set wildignore+=node_modules,.git
 set magic
 autocmd FocusGained,BufEnter * checktime
+set conceallevel=0
 
 " https://github.com/pangloss/vim-javascript
 let g:javascript_plugin_jsdoc = 1
@@ -56,3 +57,7 @@ nnoremap <leader>af :ALEFix<cr>
 
 " https://github.com/rakr/vim-one
 let g:one_allow_italics = 1
+
+" https://github.com/plasticboy/vim-markdown
+let g:vim_markdown_folding_level = 6
+let g:vim_markdown_fenced_languages = ['jsx=javascript']
