@@ -61,3 +61,6 @@ let g:one_allow_italics = 1
 " https://github.com/plasticboy/vim-markdown
 let g:vim_markdown_folding_level = 6
 let g:vim_markdown_fenced_languages = ['jsx=javascript']
+
+" https://github.com/ElmCast/elm-vim
+let g:elm_setup_keybindings = 0
