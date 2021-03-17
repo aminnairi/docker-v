@@ -64,3 +64,6 @@ let g:vim_markdown_fenced_languages = ['jsx=javascript']
 
 " https://github.com/ElmCast/elm-vim
 let g:elm_setup_keybindings = 0
+
+" https://github.com/posva/vim-vue
+let g:vue_pre_processors = 'detect_on_enter'

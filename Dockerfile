@@ -26,6 +26,8 @@ RUN git clone https://github.com/ElmCast/elm-vim /home/archlinux/.config/nvim/pa
 RUN git clone https://github.com/neovimhaskell/haskell-vim /home/archlinux/.config/nvim/pack/github/start/haskell.vim
 RUN git clone https://github.com/ekalinin/Dockerfile.vim /home/archlinux/.config/nvim/pack/github/start/dockerfile.vim
 RUN git clone https://github.com/hashivim/vim-terraform /home/archlinux/.config/nvim/pack/github/start/terraform.vim
+RUN git clone https://github.com/nikvdp/ejs-syntax /home/archlinux/.config/nvim/pack/github/start/ejs.vim
+RUN git clone https://github.com/posva/vim-vue /home/archlinux/.config/nvim/pack/github/start/vue.vim
 
 COPY ./init.vim /home/archlinux/.config/nvim/init.vim
 
