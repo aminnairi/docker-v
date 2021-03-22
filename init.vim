@@ -67,3 +67,7 @@ let g:elm_setup_keybindings = 0
 
 " https://github.com/posva/vim-vue
 let g:vue_pre_processors = 'detect_on_enter'
+
+" https://github.com/leafgarland/typescript-vim
+let g:typescript_indent_disable = 1
+
