@@ -71,3 +71,5 @@ let g:vue_pre_processors = 'detect_on_enter'
 " https://github.com/leafgarland/typescript-vim
 let g:typescript_indent_disable = 1
 
+" https://github.com/vim-python/python-syntax
+let g:python_highlight_all = 1
