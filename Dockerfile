@@ -29,6 +29,7 @@ RUN git clone https://github.com/hashivim/vim-terraform /home/archlinux/.config/
 RUN git clone https://github.com/nikvdp/ejs-syntax /home/archlinux/.config/nvim/pack/github/start/ejs.vim
 RUN git clone https://github.com/posva/vim-vue /home/archlinux/.config/nvim/pack/github/start/vue.vim
 RUN git clone https://github.com/leafgarland/typescript-vim /home/archlinux/.config/nvim/pack/github/start/typescript.vim
+RUN git clone https://github.com/hdima/python-syntax /home/archlinux/.config/nvim/pack/github/start/python.vim
 
 COPY ./init.vim /home/archlinux/.config/nvim/init.vim
 
