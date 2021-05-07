@@ -52,8 +52,10 @@ autocmd VimEnter * NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
 
 " ALE
-let g:ale_fixers = {"javascript": ["eslint"]}
+let g:ale_fixers = {"javascript": ["eslint", "remove_trailing_lines", "trim_whitespace"]}
 nnoremap <leader>af :ALEFix<cr>
+nnoremap <leader>an :ALENext<cr>
+nnoremap <leader>ap :ALEPrevious<cr>
 
 " https://github.com/rakr/vim-one
 let g:one_allow_italics = 1

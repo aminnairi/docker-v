@@ -1,6 +1,6 @@
 FROM archlinux:base-20210228.0.16308
 
-RUN pacman -Syyu --noconfirm neovim git fish nodejs
+RUN pacman -Syyu --noconfirm neovim git fish nodejs eslint
 RUN useradd -G wheel -s /bin/fish -m archlinux
 
 USER archlinux
@@ -32,6 +32,7 @@ RUN git clone https://github.com/leafgarland/typescript-vim /home/archlinux/.con
 RUN git clone https://github.com/vim-python/python-syntax /home/archlinux/.config/nvim/pack/github/start/python.vim
 
 COPY ./init.vim /home/archlinux/.config/nvim/init.vim
+COPY ./.eslintrc.js /home/archlinux/.eslintrc.js
 
 WORKDIR /home/archlinux/src
 
