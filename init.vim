@@ -52,7 +52,7 @@ autocmd VimEnter * NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
 
 " ALE
-let g:ale_fixers = {"javascript": ["eslint", "remove_trailing_lines", "trim_whitespace"], "html": ["remove_trailing_lines", "trim_whitespace"], "css": ["remove_trailing_lines", "trim_whitespace"]}
+let g:ale_fixers = {"javascript": ["eslint", "remove_trailing_lines", "trim_whitespace"], "html": ["remove_trailing_lines", "trim_whitespace"], "css": ["stylelint", "remove_trailing_lines", "trim_whitespace"]}
 nnoremap <leader>af :ALEFix<cr>
 nnoremap <leader>an :ALENext<cr>
 nnoremap <leader>ap :ALEPrevious<cr>
