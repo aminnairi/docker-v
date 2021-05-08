@@ -1,6 +1,6 @@
 FROM archlinux:base-20210228.0.16308
 
-RUN pacman -Syyu --noconfirm neovim git fish nodejs eslint stylelint stylelint-config-standard stylelint-config-recommended
+RUN pacman -Syyu --noconfirm neovim git fish nodejs eslint stylelint stylelint-config-standard stylelint-config-recommended htmlhint
 RUN useradd -G wheel -s /bin/fish -m archlinux
 
 USER archlinux
@@ -34,6 +34,7 @@ RUN git clone https://github.com/vim-python/python-syntax /home/archlinux/.confi
 COPY ./init.vim /home/archlinux/.config/nvim/init.vim
 COPY ./.eslintrc.js /home/archlinux/.eslintrc.js
 COPY ./.stylelintrc.json /home/archlinux/.stylelintrc.json
+COPY ./.htmlhintrc /home/archlinux/.htmlhintrc
 
 WORKDIR /home/archlinux/src
 
