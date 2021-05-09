@@ -1,8 +1,9 @@
+packadd! nightowl.vim
+
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
 set background=dark
-colorscheme one
 set termguicolors
 set autoindent
 set expandtab
@@ -18,6 +19,7 @@ set encoding=utf8
 set linebreak
 set scrolloff=1
 set sidescrolloff=5
+syntax on
 syntax enable
 set nowrap
 set laststatus=2
@@ -43,6 +45,7 @@ set wildignore+=node_modules,.git
 set magic
 autocmd FocusGained,BufEnter * checktime
 set conceallevel=0
+colorscheme night-owl
 
 " https://github.com/pangloss/vim-javascript
 let g:javascript_plugin_jsdoc = 1
@@ -57,8 +60,18 @@ nnoremap <leader>af :ALEFix<cr>
 nnoremap <leader>an :ALENext<cr>
 nnoremap <leader>ap :ALEPrevious<cr>
 
-" https://github.com/rakr/vim-one
-let g:one_allow_italics = 1
+" https://github.com/haishanh/night-owl.vim
+let g:onedark_hide_endofbuffer = 1
+let g:onedark_termcolors = 1
+let g:onedark_terminal_italics = 1
+
+" If you have vim >=8.0 or Neovim >= 0.1.5
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+" For Neovim 0.1.3 and 0.1.4
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " https://github.com/plasticboy/vim-markdown
 let g:vim_markdown_folding_level = 6
@@ -75,3 +88,10 @@ let g:typescript_indent_disable = 1
 
 " https://github.com/vim-python/python-syntax
 let g:python_highlight_all = 1
+
+" https://github.com/itchyny/lightline.vim
+if !has('gui_running')
+  set t_Co=256
+endif
+
+let g:lightline = {'colorscheme': 'night-owl'}
