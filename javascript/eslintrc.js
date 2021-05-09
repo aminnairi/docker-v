@@ -138,8 +138,7 @@ module.exports = {
       }
     ],
     "no-extra-parens": [
-      "error", 
-      "all"
+      "off"
     ],
     "no-extra-semi": [
       "error"

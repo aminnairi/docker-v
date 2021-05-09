@@ -31,10 +31,10 @@ RUN git clone https://github.com/posva/vim-vue /home/archlinux/.config/nvim/pack
 RUN git clone https://github.com/leafgarland/typescript-vim /home/archlinux/.config/nvim/pack/github/start/typescript.vim
 RUN git clone https://github.com/vim-python/python-syntax /home/archlinux/.config/nvim/pack/github/start/python.vim
 
-COPY ./init.vim /home/archlinux/.config/nvim/init.vim
-COPY ./.eslintrc.js /home/archlinux/.eslintrc.js
-COPY ./.stylelintrc.json /home/archlinux/.stylelintrc.json
-COPY ./.htmlhintrc /home/archlinux/.htmlhintrc
+COPY ./neovim/init.vim /home/archlinux/.config/nvim/init.vim
+COPY ./javascript/eslintrc.js /home/archlinux/.eslintrc.js
+COPY ./css/stylelintrc.json /home/archlinux/.stylelintrc.json
+COPY ./html/htmlhintrc.json /home/archlinux/.htmlhintrc
 
 WORKDIR /home/archlinux/src
 

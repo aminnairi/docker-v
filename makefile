@@ -4,4 +4,4 @@ build:
 	docker build --tag aminnairi/vim .
 
 fish:
-	cp v.fish $HOME/.config/fish/functions/v.fish
+	cp ./fish/v.fish $HOME/.config/fish/functions/v.fish
