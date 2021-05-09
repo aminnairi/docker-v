@@ -1,4 +1,4 @@
-packadd! nightowl.vim
+packloadall!
 
 set shiftwidth=2
 set tabstop=2
@@ -15,10 +15,11 @@ set smartcase
 set complete-=i
 set lazyredraw
 set display+=lastline
-set encoding=utf8
+set encoding=utf-8
 set linebreak
 set scrolloff=1
 set sidescrolloff=5
+set guifont=JetBrains\ Mono\ Nerd\ Font
 syntax on
 syntax enable
 set nowrap
@@ -55,7 +56,9 @@ autocmd VimEnter * NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
 
 " ALE
-let g:ale_fixers = {"javascript": ["eslint", "remove_trailing_lines", "trim_whitespace"], "html": ["remove_trailing_lines", "trim_whitespace"], "css": ["stylelint", "remove_trailing_lines", "trim_whitespace"]}
+let g:ale_fixers = {"javascript": ["eslint", "remove_trailing_lines", "trim_whitespace"], "html": ["remove_trailing_lines", "trim_whitespace"], "css": ["stylelint", "remove_trailing_lines", "trim_whitespace"], "typescript": ["eslint", "remove_trailing_lines", "trim_whitespace"]}
+let g:ale_fix_on_save = 1
+let g:ale_completion_autoimport = 1
 nnoremap <leader>af :ALEFix<cr>
 nnoremap <leader>an :ALENext<cr>
 nnoremap <leader>ap :ALEPrevious<cr>
@@ -89,9 +92,5 @@ let g:typescript_indent_disable = 1
 " https://github.com/vim-python/python-syntax
 let g:python_highlight_all = 1
 
-" https://github.com/itchyny/lightline.vim
-if !has('gui_running')
-  set t_Co=256
-endif
-
-let g:lightline = {'colorscheme': 'night-owl'}
+" https://github.com/vim-airline/vim-airline
+let g:airline_powerline_fonts = 1
