@@ -10,6 +10,22 @@ module.exports = {
   "root": true,
   "overrides": [
     {
+      "files": "*.ts",
+      "parser": "/home/archlinux/.npm/lib/node_modules/@typescript-eslint/parser",
+      "parserOptions": {
+        "sourceType": "module"
+      }
+    },
+    {
+      "files": "*.tsx",
+      "parser": "/home/archlinux/.npm/lib/node_modules/@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true
+        }
+      }
+    },
+    {
       "files": "*.browser.module.js",
       "env": {
         "browser": true,
@@ -41,7 +57,18 @@ module.exports = {
       }
     },
     {
-      "files": ["*.common.js", ".eslintrc.js"],
+      "files": "*.worker.module.js",
+      "parserOptions": {
+        "sourceType": "module"
+      },
+      "env": {
+        "browser": true,
+        "shared-node-browser": true,
+        "worker": true
+      }
+    },
+    {
+      "files": ["*.node.js", ".eslintrc.js"],
       "parserOptions": {
         "sourceType": "script"
       },
@@ -52,7 +79,7 @@ module.exports = {
       }
     },
     {
-      "files": "*.common.module.js",
+      "files": "*.node.module.js",
       "env": {
         "node": true,
         "shared-node-browser": true
