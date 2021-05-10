@@ -588,7 +588,8 @@ module.exports = {
     "array-bracket-newline": [
       "error",
       {
-        "multiline": true, "minItems": 2
+        "multiline": true,
+        "minItems": 2
       }
     ],
     "array-bracket-spacing": [
@@ -610,7 +611,10 @@ module.exports = {
     "camelcase": [
       "error",
       {
-        "properties": "always", "ignoreDestructuring": false, "ignoreImports": false, "ignoreGlobals": false
+        "properties": "always",
+        "ignoreDestructuring": false,
+        "ignoreImports": false,
+        "ignoreGlobals": false
       }
     ],
     "capitalized-comments": ["off"],
@@ -627,7 +631,8 @@ module.exports = {
     "comma-spacing": [
       "error",
       {
-        "before": false, "after": true
+        "before": false,
+        "after": true
       }
     ],
     "comma-style": [
@@ -692,7 +697,8 @@ module.exports = {
     "keyword-spacing": [
       "error",
       {
-        "before": true, "after": true
+        "before": true,
+        "after": true
       }
     ],
     "line-comment-position": ["off"],
@@ -716,7 +722,9 @@ module.exports = {
     "new-cap": [
       "error",
       {
-        "newIsCap": true, "capIsNew": true, "properties": true
+        "newIsCap": true,
+        "capIsNew": true,
+        "properties": true
       }
     ],
     "new-parens": ["error"],
@@ -742,7 +750,9 @@ module.exports = {
     "no-multiple-empty-lines": [
       "error",
       {
-        "max": 1, "maxEOF": 0, "maxBOF": 0
+        "max": 1,
+        "maxEOF": 0,
+        "maxBOF": 0
       }
     ],
     "no-negated-condition": ["error"],
@@ -824,13 +834,15 @@ module.exports = {
       "error",
       "double",
       {
-        "avoidEscape": true, "allowTemplateLiterals": false
+        "avoidEscape": true,
+        "allowTemplateLiterals": false
       }
     ],
     "semi-spacing": [
       "error",
       {
-        "before": false, "after": false
+        "before": false,
+        "after": false
       }
     ],
     "semi-style": [
@@ -872,7 +884,8 @@ module.exports = {
     "switch-colon-spacing": [
       "error",
       {
-        "after": true, "before": false
+        "after": true,
+        "before": false
       }
     ],
     "template-tag-spacing": [
