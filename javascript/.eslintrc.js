@@ -729,7 +729,7 @@ module.exports = {
     "no-array-constructor": ["error"],
     "no-bitwise": ["off"],
     "no-continue": "off",
-    "no-inline-comments": ["error"],
+    "no-inline-comments": ["off"],
     "no-lonely-if": "error",
     "no-mixed-operators": ["error"],
     "no-mixed-spaces-and-tabs": ["error"],
@@ -795,7 +795,7 @@ module.exports = {
     ],
     "one-var": [
       "error",
-      "always"
+      "never"
     ],
     "one-var-declaration-per-line": [
       "error",
